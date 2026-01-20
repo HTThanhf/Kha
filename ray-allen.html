@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Allen - Boston Celtics Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #007A33;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .player-detail {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #005A25;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        
+        h2 {
+            color: #007A33;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #005A25;
+        }
+        
+        h3 {
+            color: #007A33;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .player-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        
+        .player-img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #007A33;
+        }
+        
+        .player-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .info-item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid #007A33;
+        }
+        
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .stats-table th, .stats-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .stats-table th {
+            background-color: #007A33;
+            color: white;
+        }
+        
+        .stats-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #007A33;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #005A25;
+        }
+        
+        .back-btn {
+            background-color: #666;
+            margin-right: 1rem;
+        }
+        
+        .back-btn:hover {
+            background-color: #444;
+        }
+        
+        footer {
+            background-color: #007A33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #007A33;
+        }
+        
+        @media (max-width: 768px) {
+            .player-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .player-img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ray Allen</h1>
+        <div class="subtitle">Huyền thoại ném 3 điểm - Boston Celtics #20</div>
+    </header>
+    
+    <div class="container">
+        <div class="player-detail">
+            <div class="player-header">
+                <img src="Ray_Allen.png" alt="Ray Allen" class="player-img">
+                <div class="player-info">
+                    <h2>Ray Allen</h2>
+                    <p><strong>Vị trí:</strong> Hậu vệ ghi điểm</p>
+                    <p><strong>Số áo:</strong> 20</p>
+                    <p><strong>Năm thi đấu cho Celtics:</strong> 2007-2012</p>
+                    <p><strong>Chiều cao:</strong> 1,96 m</p>
+                    <p><strong>Cân nặng:</strong> 93 kg</p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="Menu.html" class="btn back-btn">← Quay lại trang chủ</a>
+                        <a href="#stats" class="btn">Xem thống kê</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Tiểu sử</h3>
+            <p>Ray Allen (sinh ngày 20 tháng 7 năm 1975) là cựu cầu thủ bóng rổ chuyên nghiệp người Mỹ, được coi là một trong những tay ném ba điểm vĩ đại nhất trong lịch sử NBA. Anh được Boston Celtics tuyển mộ vào năm 2007 và trở thành một phần quan trọng trong bộ ba "Big Three" cùng với Kevin Garnett và Paul Pierce.</p>
+            
+            <div class="highlight">
+                <p><strong>Thành tích nổi bật tại Celtics:</strong> Vô địch NBA 2008, 2 lần tham gia All-Star (2008, 2009), kỷ lục ghi 3 điểm của Celtics.</p>
+            </div>
+            
+            <h3>Sự nghiệp tại Boston Celtics</h3>
+            <p>Ray Allen gia nhập Celtics vào mùa hè năm 2007 và ngay lập tức tạo nên sự khác biệt. Cú ném ba điểm chính xác của anh trở thành vũ khí đáng sợ giúp Celtics giành chức vô địch NBA ngay trong mùa giải đầu tiên.</p>
+            <p>Trong 5 mùa giải khoác áo Celtics, Allen thiết lập nhiều kỷ lục về ném ba điểm và trở thành biểu tượng về sự chuyên nghiệp và quyết tâm.</p>
+            
+            <h3 id="stats">Thống kê tại Boston Celtics</h3>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Mùa giải</th>
+                        <th>Điểm trung bình</th>
+                        <th>Tỉ lệ 3 điểm</th>
+                        <th>Tỉ lệ ném phạt</th>
+                        <th>Rebound trung bình</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2007-08</td>
+                        <td>17.4</td>
+                        <td>39.8%</td>
+                        <td>90.7%</td>
+                        <td>3.7</td>
+                    </tr>
+                    <tr>
+                        <td>2008-09</td>
+                        <td>18.2</td>
+                        <td>40.9%</td>
+                        <td>95.2%</td>
+                        <td>3.5</td>
+                    </tr>
+                    <tr>
+                        <td>2009-10</td>
+                        <td>16.3</td>
+                        <td>36.3%</td>
+                        <td>91.3%</td>
+                        <td>3.2</td>
+                    </tr>
+                    <tr>
+                        <td>2010-11</td>
+                        <td>16.5</td>
+                        <td>44.4%</td>
+                        <td>88.1%</td>
+                        <td>3.4</td>
+                    </tr>
+                    <tr>
+                        <td>2011-12</td>
+                        <td>14.2</td>
+                        <td>45.3%</td>
+                        <td>91.5%</td>
+                        <td>3.1</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Danh hiệu tại Celtics</h4>
+                    <p>• Vô địch NBA 2008</p>
+                    <p>• 2× NBA All-Star</p>
+                    <p>• Kỷ lục 3 điểm Celtics</p>
+                </div>
+                
+                <div class="info-item">
+                    <h4>Kỷ lục</h4>
+                    <p>• 3,051 điểm 3 điểm trong sự nghiệp</p>
+                    <p>• Tỉ lệ 3 điểm: 40.0%</p>
+                    <p>• 10 lần tham gia All-Star</p>
+                </div>
+                
+                <div class="info-item">
+                    <h4>Sau sự nghiệp</h4>
+                    <p>• Được vinh danh tại Đại sảnh Danh vọng Basketball năm 2018</p>
+                    <p>• Tham gia hoạt động từ thiện và kinh doanh</p>
+                </div>
+            </div>
+            
+            <h3>Khoảnh khắc đáng nhớ</h3>
+            <p>Ray Allen được nhớ đến với những pha ném 3 điểm quan trọng, đặc biệt là trong trận chung kết NBA 2008. Sự chính xác và khả năng thi đấu dưới áp lực của anh đã giúp Celtics giành nhiều chiến thắng quan trọng.</p>
+            <p>Cú ném 3 điểm của Allen trong trận đấu với Chicago Bulls năm 2009 được coi là một trong những khoảnh khắc xuất sắc nhất trong sự nghiệp của anh tại Celtics.</p>
+            
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="Menu.html" class="btn back-btn">← Quay lại trang chủ</a>
+                <a href="larry-bird.html" class="btn">Xem Larry Bird →</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Boston Celtics Wiki. Trang này được tạo cho mục đích giáo dục.</p>
+        <p>Thông tin được tham khảo từ các nguồn chính thức của Boston Celtics và NBA.</p>
+    </footer>
+</body>
+</html>

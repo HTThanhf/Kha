@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larry Bird - Boston Celtics Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #007A33;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .player-detail {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #005A25;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        
+        h2 {
+            color: #007A33;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #005A25;
+        }
+        
+        h3 {
+            color: #007A33;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .player-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        
+        .player-img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #007A33;
+        }
+        
+        .player-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .info-item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid #007A33;
+        }
+        
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .stats-table th, .stats-table td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .stats-table th {
+            background-color: #007A33;
+            color: white;
+        }
+        
+        .stats-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #007A33;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #005A25;
+        }
+        
+        .back-btn {
+            background-color: #666;
+            margin-right: 1rem;
+        }
+        
+        .back-btn:hover {
+            background-color: #444;
+        }
+        
+        footer {
+            background-color: #007A33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .highlight {
+            background-color: #e8f5e9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #007A33;
+        }
+        
+        .legend-badge {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .player-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .player-img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Larry Bird <span class="legend-badge">Huyền thoại</span></h1>
+        <div class="subtitle">Biểu tượng của Boston Celtics - Số áo 33</div>
+    </header>
+    
+    <div class="container">
+        <div class="player-detail">
+            <div class="player-header">
+                <img src="Larry_Bird.png" alt="Larry Bird" class="player-img">
+                <div class="player-info">
+                    <h2>Larry Bird</h2>
+                    <p><strong>Vị trí:</strong> Tiền đạo</p>
+                    <p><strong>Số áo:</strong> 33</p>
+                    <p><strong>Năm thi đấu:</strong> 1979-1992</p>
+                    <p><strong>Chiều cao:</strong> 2,06 m</p>
+                    <p><strong>Cân nặng:</strong> 100 kg</p>
+                    <p><strong>Biệt danh:</strong> "Larry Legend", "The Hick from French Lick"</p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <a href="Menu.html" class="btn back-btn">← Quay lại trang chủ</a>
+                        <a href="#stats" class="btn">Xem thống kê</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Tiểu sử</h3>
+            <p>Larry Joe Bird (sinh ngày 7 tháng 12 năm 1956) là cựu cầu thủ bóng rổ chuyên nghiệp người Mỹ, được coi là một trong những cầu thủ vĩ đại nhất trong lịch sử NBA. Bird dành toàn bộ sự nghiệp 13 mùa giải của mình cho Boston Celtics, dẫn dắt đội giành 3 chức vô địch NBA.</p>
+            
+            <div class="highlight">
+                <p><strong>Thành tích nổi bật:</strong> 3× NBA Champion (1981, 1984, 1986), 3× MVP (1984-1986), 12× NBA All-Star, 9× All-NBA First Team, Đại sảnh Danh vọng Basketball.</p>
+            </div>
+            
+            <h3>Sự nghiệp huyền thoại tại Boston Celtics</h3>
+            <p>Larry Bird được Celtics chọn ở vòng 6 năm 1978 và bắt đầu thi đấu từ mùa giải 1979-80. Ngay lập tức, Bird đã tạo nên sự khác biệt và giành giải Tân binh của năm. Ông nổi tiếng với khả năng ghi điểm toàn diện, tầm nhìn chiến thuật xuất sắc và ý chí thi đấu mạnh mẽ.</p>
+            <p>Bird cùng với Magic Johnson được coi là đã "cứu" NBA vào những năm 1980 với mối kình địch Celtics-Lakers huyền thoại.</p>
+            
+            <h3 id="stats">Thống kê sự nghiệp tại Celtics</h3>
+            <table class="stats-table">
+                <thead>
+                    <tr>
+                        <th>Chỉ số</th>
+                        <th>Trung bình</th>
+                        <th>Tổng</th>
+                        <th>Xếp hạng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Điểm</td>
+                        <td>24.3</td>
+                        <td>21,791</td>
+                        <td>1st trong lịch sử Celtics</td>
+                    </tr>
+                    <tr>
+                        <td>Rebound</td>
+                        <td>10.0</td>
+                        <td>8,974</td>
+                        <td>4th trong lịch sử Celtics</td>
+                    </tr>
+                    <tr>
+                        <td>Kiến tạo</td>
+                        <td>6.3</td>
+                        <td>5,695</td>
+                        <td>1st trong lịch sử Celtics</td>
+                    </tr>
+                    <tr>
+                        <td>Cướp bóng</td>
+                        <td>1.7</td>
+                        <td>1,556</td>
+                        <td>2nd trong lịch sử Celtics</td>
+                    </tr>
+                    <tr>
+                        <td>Tỉ lệ ném</td>
+                        <td>49.6%</td>
+                        <td>-</td>
+                        <td>Top 10 Celtics</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Danh hiệu chính</h4>
+                    <p>• 3× NBA Champion (1981, 1984, 1986)</p>
+                    <p>• 3× NBA MVP (1984-1986)</p>
+                    <p>• 12× NBA All-Star</p>
+                    <p>• 2× NBA Finals MVP</p>
+                </div>
+                
+                <div class="info-item">
+                    <h4>Kỷ lục đáng nhớ</h4>
+                    <p>• 60 điểm trong 1 trận (1985)</p>
+                    <p>• 21,791 điểm cho Celtics</p>
+                    <p>• 3 lần vô địch 3 điểm All-Star</p>
+                </div>
+                
+                <div class="info-item">
+                    <h4>Sau sự nghiệp</h4>
+                    <p>• Huấn luyện viên của năm 1998</p>
+                    <p>• Giám đốc bóng rổ của Pacers</p>
+                    <p>• Đại sảnh Danh vọng 1998</p>
+                </div>
+            </div>
+            
+            <h3>Những khoảnh khắc huyền thoại</h3>
+            <p>Bird nổi tiếng với những pha xử lý bóng thông minh và những cú ném quan trọng. Trận đấu 60 điểm của ông vào năm 1985 trước Atlanta Hawks vẫn được coi là một trong những màn trình diễn vĩ đại nhất.</p>
+            <p>Cú ném trộm bóng và chuyền bóng cho Dennis Johnson trong trận đấu với Pistons năm 1987 được coi là một trong những pha bóng thông minh nhất lịch sử NBA.</p>
+            
+            <h3>Di sản</h3>
+            <p>Larry Bird không chỉ là một cầu thủ xuất sắc mà còn là biểu tượng của tinh thần Celtics. Ông được vinh danh bằng việc treo áo số 33 tại TD Garden và được coi là một trong những cầu thủ quan trọng nhất trong lịch sử đội bóng.</p>
+            
+            <div style="margin-top: 2rem; text-align: center;">
+                <a href="ray-allen.html" class="btn back-btn">← Xem Ray Allen</a>
+                <a href="Menu.html" class="btn">Quay lại trang chủ</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Boston Celtics Wiki. Trang này được tạo cho mục đích giáo dục.</p>
+        <p>Thông tin được tham khảo từ các nguồn chính thức của Boston Celtics và NBA.</p>
+    </footer>
+</body>
+</html>
