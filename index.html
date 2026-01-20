@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston Celtics - Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #007A33;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .team-info {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #005A25;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+        
+        h2 {
+            color: #007A33;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #005A25;
+        }
+        
+        h3 {
+            color: #007A33;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .logo-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+            display: inline-block;
+        }
+        
+        .players {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .player-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .player-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .player-header {
+            background-color: #007A33;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .player-content {
+            padding: 1.5rem;
+        }
+        
+        .player-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 3px solid #005A25;
+        }
+        
+        .player-stats {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            border-left: 3px solid #007A33;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #007A33;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #005A25;
+        }
+        
+        footer {
+            background-color: #007A33;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .wiki-footer {
+            font-size: 0.9rem;
+            color: #ddd;
+            margin-top: 1rem;
+        }
+        
+        .logo-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: contain;
+            box-shadow: 0 0 15px rgba(0, 122, 51, 0.3);
+            border: 5px solid white;
+            background-color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .players {
+                flex-direction: column;
+            }
+            
+            .player-card {
+                min-width: 100%;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boston Celtics</h1>
+        <div class="subtitle">Đội bóng rổ chuyên nghiệp của NBA - Thành lập năm 1946</div>
+    </header>
+    
+    <div class="container">
+        <div class="logo-section">
+            <img src="logo.png" alt="Logo Boston Celtics" class="logo-img">
+        </div>
+        
+        <div class="team-info">
+            <h2>Boston Celtics</h2>
+            <p>Boston Celtics là đội bóng rổ NBA thành lập năm 1946 tại Boston, Massachusetts. Đội có 17 chức vô địch NBA, nhiều nhất trong lịch sử giải đấu.</p>
+            <p>Màu sắc chính thức: Xanh lá (#007A33), trắng. Sân nhà: TD Garden.</p>
+        </div>
+        
+        <h2 style="margin-top: 3rem;">Các huyền thoại Celtics</h2>
+        <div class="players">
+            <!-- Ray Allen Card -->
+            <div class="player-card">
+                <div class="player-header">
+                    <h3>Ray Allen</h3>
+                    <p>Hậu vệ ghi điểm - Số áo: 20</p>
+                </div>
+                <img src="Ray_Allen.png" alt="Ray Allen" class="player-img">
+                <div class="player-content">
+                    <p>Ray Allen là một trong những tay ném ba điểm vĩ đại nhất NBA. Khoác áo Celtics từ 2007-2012, anh giúp đội vô địch NBA 2008.</p>
+                    
+                    <div class="player-stats">
+                        <p><strong>Thống kê tại Celtics:</strong></p>
+                        <p>Điểm trung bình: 16.7 | Tỉ lệ 3 điểm: 40.9%</p>
+                    </div>
+                    
+                    <a href="ray-allen.html" class="btn">Xem trang chi tiết</a>
+                </div>
+            </div>
+            
+            <!-- Larry Bird Card -->
+            <div class="player-card">
+                <div class="player-header">
+                    <h3>Larry Bird</h3>
+                    <p>Tiền đạo - Số áo: 33</p>
+                </div>
+                <img src="Larry_Bird.png" alt="Larry Bird" class="player-img">
+                <div class="player-content">
+                    <p>Larry Bird là một trong những cầu thủ vĩ đại nhất NBA. Ông dẫn dắt Celtics giành 3 chức vô địch (1981, 1984, 1986).</p>
+                    
+                    <div class="player-stats">
+                        <p><strong>Thống kê tại Celtics:</strong></p>
+                        <p>Điểm trung bình: 24.3 | Rebound trung bình: 10.0</p>
+                    </div>
+                    
+                    <a href="larry-bird.html" class="btn">Xem trang chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Boston Celtics Wiki. Trang này được tạo cho mục đích giáo dục.</p>
+        <p class="wiki-footer">Thông tin được tham khảo từ các nguồn chính thức của Boston Celtics và NBA.</p>
+    </footer>
+</body>
+</html>
